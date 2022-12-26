@@ -1,16 +1,13 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.dark {
+    @apply bg-black;
 }
-
-* {
-  box-sizing: border-box;
+.react-horizontal-scrolling-menu--scroll-container {
+    @apply py-6;
+}
+.react-horizontal-scrolling-menu--item:first-child {
+    @apply ml-10 md:ml-20 ;
 }
